@@ -63,9 +63,11 @@ a {
   text-transform: uppercase;
 }
 /* end of Globals */
+
+
 .header {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./images/main-bcg.jpg") center/cover no-repeat fixed;
+  url("./images/main-bcg.jpg") center/cover no-repeat fixed;
   min-height: 100vh;
   position: relative;
 }
@@ -223,9 +225,9 @@ a {
     width: 25%;
   }
 }
-/* end of Specials */
+/* End of Specials */
 
-/* about */
+/* Start Of About */
 
 .about-img,
 .about-info {
@@ -258,9 +260,9 @@ a {
     padding: 2rem;
   }
 }
-/* end of about */
+/* End of About */
 
-/* products */
+/* Start of Products */
 .products {
   background: var(--mainDark);
 }
@@ -321,3 +323,77 @@ a {
   }
 }
 /* end of products */
+
+
+/* Start of contact */
+
+.contact{
+  padding: 2rem;
+}
+.contact-item{
+  margin-bottom: 3rem;
+}
+.contact-title{
+  color: var(--secondaryColor);
+  text-transform: uppercase;
+  letter-spacing: var(--letterSpacing);
+  font-family: var(--macondoText);
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+.contact-text{
+  text-transform: uppercase;
+}
+.form-control{
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid var(--secondaryColor);
+  outline: none;
+  margin: 2rem 0;
+  padding: 1.3rem 0;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+.form-control::placeholder{
+  text-transform: uppercase;
+  color: var(--secondaryColor);
+  letter-spacing: var(--letterSpacing);
+}
+@media screen and (min-width:992px)
+{
+  .contact-info,.contact-form{
+    float: left;
+    width: 50%;
+    padding: 0 1rem;
+  }
+}
+.contact-info{
+  padding: 3rem 0;
+}
+/* End of contact */
+
+/* Start  of Footer */
+.footer{
+  background: var(--mainDark);
+  text-align: center;
+}
+.social-icon{
+  margin-right: 1.3rem;
+  color: var(--mainWhite);
+  font-size: 1.3rem;
+  transition: var(--mainTransition);
+
+}
+.social-icon:hover{
+  color: var(--secondaryColor);
+
+}
+.footer-text{
+  text-transform: uppercase;
+  color: var(--mainWhite);
+  letter-spacing: var(--letterSpacing);
+  margin-top: 1rem;
+  font-size: 0.85rem;
+}
+/* Start  of Footer */
