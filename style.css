@@ -64,6 +64,75 @@ a {
 }
 /* end of Globals */
 
+/* Start nav button */
+.nav-btn{
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  color: var(--secondaryColor);
+  margin: 1rem 1.3rem;
+  font-size: 2rem;
+  animation: bounce 2s ease-in-out infinite;
+  cursor: pointer;
+}
+@keyframes bounce {
+0% {
+  transform: scale(1);
+}
+50% {
+  transform: scale(1.5);
+}
+100% {
+  transform: scale(1);
+}
+}
+/* End nav button */
+
+
+/* Start nav Bar */
+.navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  background: var(--mainGrey);
+  transition: var(--mainTransition);
+  padding-top: 1rem;
+  padding-left: 2rem;
+  transition: var(--mainTransition);
+  transform: translateX(-100%);
+}
+.nav-close{
+  font-size: 2rem;
+  cursor: pointer;
+}
+.nav-items{
+  list-style-type: none;
+}
+.nav-link{
+  display: block;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: var(--secondaryColor);
+  transition: var(--mainTransition);
+}
+.nav-link:hover{
+  color: var(--mainDark);
+  padding-left: 0.5rem;
+}
+.showNav{
+  transform: translateX(0%);
+}
+/* End nav Bar */
+@media screen and (min-width:768px){
+  .nav{
+    width: 30vw;
+    max-width: 20rem;
+  }
+}
 
 .header {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
